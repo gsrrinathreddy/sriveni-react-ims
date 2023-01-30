@@ -18,7 +18,7 @@ import cake13 from '../../../assets/cakes/cake13.jpg';
 import cake14 from '../../../assets/cakes/cake14.jpg';
 
 //import cartComponent from '../../../components/cartComponent';
-//import {ordered,restocked}from'../cakeslice'
+import {ordered,restocked}from'../cakeslice'
 //import Cardcomponent from '../../../components/Cardcomponent';
  import ItemCard from '../../../components/ItemCard';
  
@@ -163,6 +163,7 @@ import cake14 from '../../../assets/cakes/cake14.jpg';
                               discountprice={item.discountprice}
                               sellingstatus={item.sellingstatus}
                               ordername="cake"
+                              order = {ordered}
                               />
                              
                     </Grid>

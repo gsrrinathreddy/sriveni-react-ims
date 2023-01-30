@@ -52,7 +52,7 @@ export default function ItemCard(props){
   let sellingstatus = props.sellingstatus;
   let discount = actualprice-discountprice;
   let percentage = Math.floor((discount/actualprice)*100) +"% off" ;
-  
+  let orderPlaced = props.order;
   const [expanded, setExpanded] = React.useState(false);
   const[Active,setActive] = useState();
   const [open, setOpen] = React.useState(false);
@@ -67,10 +67,7 @@ export default function ItemCard(props){
       dispatch(cakesordered(qty))
     }else if(ordername=='Chocolates'){
       dispatch(chocolateordered(qty))
-    }else if(ordername=='Flowers'){
-      dispatch(FlowersOrdered(qty))
     }
-    
     
     setOpen(true);
   };
