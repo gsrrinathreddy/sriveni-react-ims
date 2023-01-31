@@ -42,10 +42,12 @@ function IMSNavbar(props) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{backgroundColor:'orange'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <Link to ='/' style={{textDecoration:'none'}}>
+          </Link>
           <Typography
             variant="h6"
             noWrap
@@ -94,14 +96,19 @@ function IMSNavbar(props) {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Link to = {page} style={{textDecoration:'none'}}>
+               < MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
+                
+              
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
           
               <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+              
           <Typography
             variant="h5"
             noWrap

@@ -22,6 +22,8 @@ function App() {
       <BrowserRouter>
       <IMSNavbar pages={a} settings={b}/>
       <Routes>
+      <Route path="/" element={<Flowers/>}/>
+
        <Route path="/Cake" element={<Cake/>}/>
        <Route path="/Chocolates" element={<Chocolates/>}/>
        <Route path="/Flowers"element={<Flowers/>}/>
