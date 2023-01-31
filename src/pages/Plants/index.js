@@ -7,7 +7,7 @@ export default function Plants(){
     return(
         <>
         <PlantView/>
-        <Basicbutton imstext = {'sri'}/>
+    
         </>
     )
 }

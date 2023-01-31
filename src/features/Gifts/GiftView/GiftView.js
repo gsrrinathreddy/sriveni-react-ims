@@ -5,6 +5,15 @@ import {Box} from '@mui/material';
 //import cartComponent from '../../../components/cartComponent';
 import box1 from '../../../assets/Gifts/box_1.webp';
 import chocolategiftbox from '../../../assets/Gifts/chocolate-gift-box_1.webp';
+import collectionteagiftbox1 from '../../../assets/Gifts/collection-tea-gift-box_1.webp';
+import cranberrygifthamper1 from '../../../assets/Gifts/cranberry-gift-hamper_1.webp';
+import cushiongift1 from '../../../assets/Gifts/cushion-gift_1.webp';
+import heaven1 from '../../../assets/Gifts/heaven_1.webp';
+import lovegift1 from '../../../assets/Gifts/love-gift_1.webp'
+import moneyplantgiftcombo1 from '../../../assets/Gifts/money-plant-gift-combo_1.webp';
+import morningdewgiftbasket1 from '../../../assets/Gifts/morning-dew-gift-basket_1.webp'
+import napkingiftcombo1 from '../../../assets/Gifts/napkin-gift-combo_1.webp'
+
 import ItemCard from '../../../components/ItemCard';
 const GiftsList = [
     {
@@ -23,6 +32,71 @@ const GiftsList = [
     rating:4,
     sellingstatus:"best seller"
     },
+    {
+        title:"collectionteagiftbox1",
+        pic:collectionteagiftbox1,
+        actualprice:100,
+        discountprice:70,
+        rating:4,
+        sellingstatus:"best seller"
+        },
+        {
+            title:"cranberrygifthamper1",
+            pic:cranberrygifthamper1,
+            actualprice:100,
+            discountprice:70,
+            rating:4,
+            sellingstatus:"best seller"
+            },
+            {
+                title:"cushiongift1",
+                pic:cushiongift1,
+                actualprice:100,
+                discountprice:70,
+                rating:4,
+                sellingstatus:"best seller"
+                },
+                {
+                    title:"heaven1",
+                    pic:heaven1,
+                    actualprice:100,
+                    discountprice:70,
+                    rating:4,
+                    sellingstatus:"best seller"
+                    },
+                    {
+                        title:"lovegift1",
+                        pic:lovegift1,
+                        actualprice:100,
+                        discountprice:70,
+                        rating:4,
+                        sellingstatus:"best seller"
+                        },
+                        {
+                            title:"moneyplantgiftcombo1",
+                            pic:moneyplantgiftcombo1,
+                            actualprice:100,
+                            discountprice:70,
+                            rating:4,
+                            sellingstatus:"best seller"
+                            },
+                            {
+                                title:"morningdewgiftbasket1",
+                                pic:morningdewgiftbasket1,
+                                actualprice:100,
+                                discountprice:70,
+                                rating:4,
+                                sellingstatus:"best seller"
+                                },
+                                {
+                                    title:"napkingiftcombo1",
+                                    pic:napkingiftcombo1,
+                                    actualprice:100,
+                                    discountprice:70,
+                                    rating:4,
+                                    sellingstatus:"best seller"
+                                    },
+        
     
 ]
 export default function GiftView(){
