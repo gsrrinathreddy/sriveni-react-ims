@@ -4,15 +4,17 @@ import logger from 'redux-logger'
 //import cakereducer from '../features/cake/cakeslice';
 import Chocolatesreducer from '../features/chocolates/ChocolatesSlice'
 import Flowerreducer from '../features/Flowers/FlowersSlice'
-import Giftreducer from '../features/Gifts/GiftSlice'
+import giftreducer from '../features/Gifts/GiftSlice'
 import plantReducer from '../features/Plant/PlantSlice'
+import cartReducer from "../features/cart/cartSlice"
 const store = configureStore({
     reducer:{
         cake:cakereducer,
         Chocolates:Chocolatesreducer,
         Flower:Flowerreducer,
-        Gift:Giftreducer,
-        plant:plantReducer
+        Gift:giftreducer, 
+        plant:plantReducer,
+        cart:cartReducer
     },
     middleware:getDefaultMiddleware=>getDefaultMiddleware().concat(logger)
 })

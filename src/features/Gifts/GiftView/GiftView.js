@@ -27,12 +27,13 @@ const GiftsList = [
 ]
 export default function GiftView(){
     const dispatch=useDispatch();
-    const noOfGifts = useSelector((state)=>state.Gifts.noOfGifts);
+     const noOfGifts = useSelector((state)=>state.Gift.noOfGifts);
     console.log('no of Gifts',noOfGifts);
     let order=4
+    let ordername="gift"
     return(
         <>
-        <Box sx={{margin:'25px'}}></Box>
+        <Box sx={{margin:'25px'}}>
      
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
          {
@@ -44,19 +45,18 @@ export default function GiftView(){
                                   pic={item.pic}
                                   actualprice={item.actualprice}
                                   discountprice={item.discountprice}
-                                  sellingstatus={item.sellingstatus}/>
+                                  sellingstatus={item.sellingstatus}
+                                  ordername={ordername}/>
+                                  
+                                
                         </Grid>
                     )
                    })
-                }
-        </Grid> 
-        </>
-    )
-}
-      
-   
-
-
-
+        }
+        </Grid>
+        </Box>
+        </> 
+               )
+   }
 
 

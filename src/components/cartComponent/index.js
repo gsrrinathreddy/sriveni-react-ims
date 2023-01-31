@@ -21,8 +21,8 @@ export default function CartComp(props) {
     let orderedChocolate = useSelector((state)=>state.Chocolates.noOfordered)
     //const orderedGift = useSelector((state)=>state.Gift.noOfordered)
     //const orderedPlants = useSelector((state)=>state.plants.noOfordered) 
-    let s2=useSelector((state)=>state.Flower.noOfordered)
-    let sum = orderedcakes+orderedChocolate+s2
+    let orderedFlowers=useSelector((state)=>state.Flower.noOfordered)
+    let sum = orderedcakes+orderedChocolate+orderedFlowers
     //let badgeContent=props.badgeContent
     let color=props.color
   return (

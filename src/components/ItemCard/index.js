@@ -52,6 +52,7 @@ export default function ItemCard(props){
   let sellingstatus = props.sellingstatus;
   let discount = actualprice-discountprice;
   let percentage = Math.floor((discount/actualprice)*100) +"% off" ;
+  let total = discountprice;
   let orderPlaced = props.order;
   const [expanded, setExpanded] = React.useState(false);
   const[Active,setActive] = useState();
@@ -60,17 +61,20 @@ export default function ItemCard(props){
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
   });
 
+  let params = {
+    title:title,
+    actualprice:actualprice,
+    discountprice:discountprice,
+    qty:parseInt(qty),
+    total:discountprice
+  }
+  
   
 
-  const handleClick1 = () => {
-    if(ordername=='cake'){
-      dispatch(cakesordered(qty))
-    }else if(ordername=='Chocolates'){
-      dispatch(chocolateordered(qty))
-    }
     
-    setOpen(true);
-  };
+    
+    
+  
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -144,8 +148,12 @@ export default function ItemCard(props){
           <br/>
           
           <TextField sx={{width:'70px'}} size="small" id="outlined-basic"  variant="outlined" defaultValue={1} onChange={(e)=>setQty(e.currentTarget.value)}/>
-          <Button endIcon={<AddShoppingCartOutlinedIcon/>} onClick={handleClick1}
-            >Add</Button>
+          <Button endIcon={<AddShoppingCartOutlinedIcon/>} onClick={()=>dispatch(
+            cakesordered(params))
+            
+            
+            }
+           >Add</Button>
          </Typography>
          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
@@ -164,6 +172,8 @@ export default function ItemCard(props){
         >
           <FavoriteIcon />
         </IconButton>
+              
+        
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
@@ -172,7 +182,7 @@ export default function ItemCard(props){
           </Typography> 
       </CardActions>
   
-    </Card>
-  );
-}
+    </Card>    
+    );
 
+}

@@ -1,7 +1,14 @@
 import {createSlice} from "@reduxjs/toolkit";
 const initialState={
     noOfChocolates:50,
-    noOfordered:0
+    noOfordered:0,
+    ChocolateList:{
+        qty:0,
+        title:null,
+        actualprice:null,
+        discountprice:null
+
+    }
 }
 const ChocolatesSlice=createSlice({
     name:'Chocolates',

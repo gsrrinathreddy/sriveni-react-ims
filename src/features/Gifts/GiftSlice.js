@@ -4,7 +4,7 @@ const initialState={
     noOfordered:0
 }
 const GiftSlice=createSlice({
-    name:'Gifts',
+    name:'Gift',
     initialState,
     reducers:{
         ordered:(state,action)=>{
