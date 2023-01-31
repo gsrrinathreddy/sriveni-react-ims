@@ -63,7 +63,7 @@ export default function Plantview(){
         <>
         
         <Box sx={{margin:'25px'}}>
-        <Grid container spacing={{xs:2,md:2}} columns={{xs:4,sm:8,md:12}}></Grid>
+        <Grid container spacing={{xs:2,md:2}} columns={{xs: 4,sm: 8,md: 12}}>
             {
                 PlantList.map((item)=>{
                     return(
@@ -77,7 +77,9 @@ export default function Plantview(){
                         </Grid>
                     )
                 })
-            }
+          }
+         </Grid> 
+
         </Box>
         </>
      )
