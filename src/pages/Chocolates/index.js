@@ -3,13 +3,13 @@
 import ChocolatesView from "../../features/chocolates/ChocolatesView/ChocolatesView"
 
 
-export default function Chocolates(){
-    
-    return(
+export default function Chocolates() {
+
+    return (
         <>
-        <ChocolatesView/>
-        
-         
+            <ChocolatesView />
+
+
         </>
     )
 }
