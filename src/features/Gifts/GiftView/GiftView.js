@@ -109,12 +109,12 @@ export default function GiftView(){
         <>
         <Box sx={{margin:'25px'}}>
      
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
          {
             
                 GiftsList.map((item)=>{
                     return(
-                        <Grid item xs={2} sm={4} md={4} display='flex' justifyContent='center'>
+                        <Grid item xs={4} sm={4} md={3} display='flex' justifyContent='center'>
                         <ItemCard title={item.title}
                                   pic={item.pic}
                                   actualprice={item.actualprice}

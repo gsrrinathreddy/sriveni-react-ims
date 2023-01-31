@@ -63,12 +63,18 @@ export default function Plantview(){
         <>
         
         <Box sx={{margin:'25px'}}>
+        <Grid container spacing={{xs:2,md:2}} columns={{xs:4,sm:8,md:12}}></Grid>
             {
                 PlantList.map((item)=>{
                     return(
+                        <Grid item xs ={4} sm={4} md ={3} display='flex' justifyContent='center'>
                         <ItemCard   title={item.title}
-                                    pic={item.pic}   
-                        ></ItemCard>
+                                    pic={item.pic}
+                                    actualprice = {item.actualprice}
+                                    sellingstatus = {item.sellingstatus}
+                                    ordername='Plant'
+                                    />   
+                        </Grid>
                     )
                 })
             }
