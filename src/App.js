@@ -11,6 +11,8 @@ import Chocolates from './pages/Chocolates';
 import Flowers from './pages/Flowers';
 import Gifts from './pages/Gifts';
 import Plants from './pages/Plants';
+import Error from './pages/Error';
+import Delivery from './pages/Delivery';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <IMSNavbar pages={a} settings={b}/>
       <Routes>
       <Route path="/" element={<Flowers/>}/>
+      <Route path='/*' element={<Error/>}/>
 
        <Route path="/Cake" element={<Cake/>}/>
        <Route path="/Chocolates" element={<Chocolates/>}/>
@@ -30,6 +33,7 @@ function App() {
        <Route path="/Gifts" element={<Gifts/>}/>
        <Route path="/Cart" element={<Cart/>}/>
        <Route path='/Plants' element={<Plants/>}/>
+       <Route path='cart/Delivery'element={<Delivery/>}/>
        
 
     

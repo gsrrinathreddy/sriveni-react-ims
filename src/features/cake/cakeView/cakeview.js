@@ -16,7 +16,11 @@ import cake11 from '../../../assets/cakes/cake11.jpg';
 import cake12 from '../../../assets/cakes/cake12.jpg';
 import cake13 from '../../../assets/cakes/cake13.jpg';
 import cake14 from '../../../assets/cakes/cake14.jpg';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+//import SwipeLeftIcon from '@mui/icons-material/SwipeLeft';
 //import cartComponent from '../../../components/cartComponent';
 import {ordered,restocked}from'../cakeslice'
 //import Cardcomponent from '../../../components/Cardcomponent';
@@ -151,8 +155,8 @@ import {ordered,restocked}from'../cakeslice'
     export default function Cakeview(){
     return(
         <>
-        <Box sx={{margin:'25px'}}>
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Box sx={{margin:'25px'}} >
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:'pink'}}>
          {
             cakeList.map((item)=>{
                 return(
@@ -167,12 +171,21 @@ import {ordered,restocked}from'../cakeslice'
                               />
                              
                     </Grid>
+                    
                 )
             })
         }
         </Grid>
     
         </Box>
+        <Box style={{backgroundColor:'carnation Pink'}}>
+            <h2 align = 'left'> Contact Us</h2>
+            <h4 align ='left'>   about us </h4>
+            <h4 align = 'left'>about logo team</h4>
+            <h4 align = 'left'> careers </h4>
+            <h2 align = 'right'>contact mail</h2>
+            <h2> Keep In Touch   :            <FacebookIcon/>  <WhatsAppIcon/>     <InstagramIcon/>     <TwitterIcon/></h2>
+            </Box>
         
     
          </>

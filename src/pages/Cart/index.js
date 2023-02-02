@@ -85,13 +85,15 @@ export default function Cart(){
                         })
                     }
                 
-                </Grid>   
+                                </Grid> 
+                    
             </Grid>
                 
 
 
             
         </Box>
+        <Button onClick={()=>navigate("Delivery")}>Place Order</Button>
         
         </>
     )

@@ -96,7 +96,7 @@ export default function ItemCard(props){
 
 
  return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 450 }}>
       <CardHeader
       
 
@@ -107,8 +107,9 @@ export default function ItemCard(props){
           </Avatar>
         }
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
+          <IconButton aria-label="settings" >
+          
+          <MoreVertIcon />
           </IconButton>
           
         }
@@ -118,7 +119,7 @@ export default function ItemCard(props){
       <CardMedia >
       <div style={{position:"relative"}}>
       <CardMedia style={{height:"250px",paddingTop:"2%"}} component="img" image={pic}/>
-      <div style={{position:"absolute",alignItems:'flex-end',color:"red",top:10,left:"85%",
+            <div style={{position:"absolute",alignItems:'flex-end',color:"red",top:10,left:"85%",
       transform:"translateX(-50%)",}}>
         <Stack spacing={1}>
           <Chip label={sellingstatus} color="success"/>
