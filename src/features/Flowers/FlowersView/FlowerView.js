@@ -2,18 +2,18 @@
 import{useDispatch,useSelector} from 'react-redux'
 import { Chip, Grid } from '@mui/material';
 import { Box } from '@mui/system';
-import autumngardenfloralbouquet from '../../../assets/Flowers/autumn-garden-floral-bouquet_1.webp';
-import autumnlovefloralarrangement from '../../../assets/Flowers/autumn-love-floral-arrangement_1.webp';
-import beautifulpinkrosesglassvasearrangement from '../../../assets/Flowers/beautiful-pink-roses-glass-vase-arrangement_1.webp' ;
-import blushingloverosessleeve from '../../../assets/Flowers/blushing-love-roses-sleeve_1.webp';
-import bohoinspiredfloralvase from '../../../assets/Flowers/boho-inspired-floral-vase_1.webp';
-import charminglove14rosesarrangement from '../../../assets/Flowers/charming-love-14-roses-arrangement_1.webp';
-import designers16redrosesarrangement from '../../../assets/Flowers/designers-16-red-roses-arrangement_1.webp';
-import divineloveorchidsbouquet from '../../../assets/Flowers/divine-love-orchids-bouquet_1.webp';
-import elegantviberedrosesbouquet from '../../../assets/Flowers/elegant-vibe-red-roses-bouquet_1.webp';
-import enchantingorchidsbouquet from '../../../assets/Flowers/enchanting-orchids-bouquet_2.webp';
-import gleamingbeautyfloralarrangement from '../../../assets/Flowers/gleaming-beauty-floral-arrangement_1.webp';
-import hellosunshine3sunflowersbouquet from '../../../assets/Flowers/hello-sunshine-3-sunflowers-bouquet_1.webp';
+import autumngardenfloralbouquet from '../../../assets/Flowers/autumn-garden-floral-bouquet_1.jpg';
+import autumnlovefloralarrangement from '../../../assets/Flowers/autumn-love-floral-arrangement_1.jpg';
+import beautifulpinkrosesglassvasearrangement from '../../../assets/Flowers/beautiful-pink-roses-glass-vase-arrangement_1.jpg' ;
+import blushingloverosessleeve from '../../../assets/Flowers/blushing-love-roses-sleeve_1.jpg';
+import bohoinspiredfloralvase from '../../../assets/Flowers/boho-inspired-floral-vase_1.jpg';
+import charminglove14rosesarrangement from '../../../assets/Flowers/charming-love-14-roses-arrangement_1.jpg';
+import designers16redrosesarrangement from '../../../assets/Flowers/designers-16-red-roses-arrangement_1.jpg';
+import divineloveorchidsbouquet from '../../../assets/Flowers/divine-love-orchids-bouquet_1.jpg';
+import elegantviberedrosesbouquet from '../../../assets/Flowers/elegant-vibe-red-roses-bouquet_1.jpg';
+import enchantingorchidsbouquet from '../../../assets/Flowers/enchanting-orchids-bouquet_2.jpg';
+import gleamingbeautyfloralarrangement from '../../../assets/Flowers/gleaming-beauty-floral-arrangement_1.jpg';
+import hellosunshine3sunflowersbouquet from '../../../assets/Flowers/hello-sunshine-3-sunflowers-bouquet_1.jpg';
 import ItemCard from '../../../components/ItemCard';
 //import IMSNavbar from '../../../components/IMSNavbar';
 const FlowersList = [
@@ -139,7 +139,7 @@ export default function Flowerview(){
     return(
         <>
         <Box sx={{margin:'25px'}}></Box>
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"pink"}}>
          {
             
                 FlowersList.map((item)=>{

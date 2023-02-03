@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {useSelector} from 'react-redux';
+import { Tooltip } from '@mui/material';
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -29,7 +30,9 @@ export default function CartComp(props) {
     <>
     <IconButton aria-label="cart">
       <StyledBadge badgeContent={sum} color="secondary">
+        <Tooltip title="cart">
         <ShoppingCartIcon  sx={{color:{color}}}/>
+        </Tooltip>
       </StyledBadge>
     </IconButton>
     </>

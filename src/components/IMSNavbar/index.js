@@ -18,6 +18,7 @@ import CartComp from '../cartComponent';
 import IMSAutocomplete from '../IMSAutocomplete';
 import Cart from '../../pages/Cart';
 import { useSelect } from '@mui/base';
+//import Person2Icon from '@mui/icons-material/Person2';
 
 //const pages = ['cake', 'Chocolates', 'Flowers','Gifts','Plants'];
 //const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -56,7 +57,7 @@ marginRight:'10px',marginLeft:'10px'
   };
 
   return (
-    <AppBar position="static" style={{color:"light pink"}} >
+    <AppBar position="static" style={{backgroundColor:"#F88379"}} >
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -156,6 +157,7 @@ marginRight:'10px',marginLeft:'10px'
               
 
             ))}
+        
             
               </Box>
               <Box sx={{bgcolor:'white'}}>
@@ -165,7 +167,8 @@ marginRight:'10px',marginLeft:'10px'
 
 
           <Link to={'Cart'}>
-          <Box sx={{marginRight:"20px"}}>
+          <Box sx={{marginRight:"30px"}}>
+            
             <CartComp/>
           </Box>
           </Link>
@@ -193,9 +196,11 @@ marginRight:'10px',marginLeft:'10px'
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
+                <Link to = {setting}>
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>

@@ -52,7 +52,7 @@ export default function Cardcomponent(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 345,marginLeft:"500px" }} style={{backgroundColor:"pink"}}>
+    <Card sx={{ maxWidth: 345,marginLeft:"500px" }} style={{backgroundColor:"#E0BFB8"}}>
       <CardHeader
         avatar={
           <Avatar src={img4}/>

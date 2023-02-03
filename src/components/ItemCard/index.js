@@ -96,7 +96,7 @@ export default function ItemCard(props){
 
 
  return (
-    <Card sx={{ maxWidth: 450 }}>
+    <Card sx={{ maxWidth: 450,cursor:"pointer" }}>
       <CardHeader
       
 
@@ -148,12 +148,14 @@ export default function ItemCard(props){
           
           <br/>
           
-          <TextField sx={{width:'70px'}} size="small" id="outlined-basic"  variant="outlined" defaultValue={1} onChange={(e)=>setQty(e.currentTarget.value)}/>
-          <Button endIcon={<AddShoppingCartOutlinedIcon/>} onClick={()=>dispatch(
-            cakesordered(params))
+          <TextField
+           sx={{width:'70px'}} size="small" id="outlined-basic"  variant="outlined" defaultValue={1} onChange={(e)=>setQty(e.currentTarget.value)}/>
+          <Button endIcon={<AddShoppingCartOutlinedIcon/>} onClick={()=>{
+            if(qty>0)
+            dispatch( cakesordered(params))
             
             
-            }
+           } }
            >Add</Button>
          </Typography>
          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
@@ -173,6 +175,7 @@ export default function ItemCard(props){
         >
           <FavoriteIcon />
         </IconButton>
+
               
         
         <IconButton aria-label="share">

@@ -13,12 +13,17 @@ import Gifts from './pages/Gifts';
 import Plants from './pages/Plants';
 import Error from './pages/Error';
 import Delivery from './pages/Delivery';
+import Signin from './features/Signin';
+import Signout1 from './features/Signout1';
+import Checkout1 from './pages/Checkout1';
+
+
 
 
 function App() {
    let a=['cake', 'Chocolates', 'Flowers','Gifts','Plants'];
 
-   let b=['Profile', 'Account', 'Dashboard', 'Logout'];
+   let b=['Signin', 'Checkout1', 'Dashboard', 'Signout1'];
   return (
     <div className="App">
       <BrowserRouter>
@@ -34,6 +39,10 @@ function App() {
        <Route path="/Cart" element={<Cart/>}/>
        <Route path='/Plants' element={<Plants/>}/>
        <Route path='cart/Delivery'element={<Delivery/>}/>
+       <Route path='/Signin' element={<Signin/>}/>
+       <Route path='/Signout1' element={<Signout1/>}/>
+       <Route path='/Checkout1' element={<Checkout1/>}/>
+      
        
 
     

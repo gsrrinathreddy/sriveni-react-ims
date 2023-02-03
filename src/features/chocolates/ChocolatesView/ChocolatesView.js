@@ -1,17 +1,17 @@
 import{useDispatch,useSelector} from 'react-redux'
 import { Chip, Grid } from '@mui/material';
 import { Box } from '@mui/system';
-import assortedchocolatebouquetofsweetness from '../../../assets/Chocolates/assorted-chocolate-bouquet-of-sweetness_1.webp';
-import assortedchocolatesbasketarrangement from '../../../assets/Chocolates/assorted-chocolates-basket-arrangement_1.webp';
-import beautifulboxofassortedchocolates18pcs from '../../../assets/Chocolates/beautiful-box-of-assorted-chocolates-18-pcs_1.webp';
-import boxofloveyouchocolatesbrownies from '../../../assets/Chocolates/box-of-love-you-chocolates-brownies_1.webp';
-import charminghappybirthdaychocolatevase from '../../../assets/Chocolates/charming-happy-birthday-chocolate-vase_1.webp';
-import chocolateheartbouquet from '../../../assets/Chocolates/chocolate-heart-bouquet_1.webp';
-import chocolatesbrowniebox from '../../../assets/Chocolates/chocolates-brownie-box_1.webp';
-import dairymilkchocolatecollection from '../../../assets/Chocolates/dairy-milk-chocolate-collection_1.webp';
-import delectablechocolatesinfloralbox21pcs from '../../../assets/Chocolates/delectable-chocolates-in-floral-box-21-pcs_1.webp';
-import ferrerorocherdelightfulbouquet from '../../../assets/Chocolates/ferrero-rocher-delightful-bouquet_1.webp';
-import happybirthdaykitkatchocolates from '../../../assets/Chocolates/happy-birthday-kitkat-chocolates_1.webp';
+import assortedchocolatebouquetofsweetness from '../../../assets/Chocolates/assorted-chocolate-bouquet-of-sweetness_1.jpg';
+import assortedchocolatesbasketarrangement from '../../../assets/Chocolates/assorted-chocolates-basket-arrangement_1.jpg';
+import beautifulboxofassortedchocolates18pcs from '../../../assets/Chocolates/beautiful-box-of-assorted-chocolates-18-pcs_1.jpg';
+import boxofloveyouchocolatesbrownies from '../../../assets/Chocolates/box-of-love-you-chocolates-brownies_1.jpg';
+import charminghappybirthdaychocolatevase from '../../../assets/Chocolates/charming-happy-birthday-chocolate-vase_1.jpg';
+import chocolateheartbouquet from '../../../assets/Chocolates/chocolate-heart-bouquet_1.jpg';
+import chocolatesbrowniebox from '../../../assets/Chocolates/chocolates-brownie-box_1.jpg';
+import dairymilkchocolatecollection from '../../../assets/Chocolates/dairy-milk-chocolate-collection_1.jpg';
+import delectablechocolatesinfloralbox21pcs from '../../../assets/Chocolates/delectable-chocolates-in-floral-box-21-pcs_1.jpg';
+import ferrerorocherdelightfulbouquet from '../../../assets/Chocolates/ferrero-rocher-delightful-bouquet_1.jpg';
+import happybirthdaykitkatchocolates from '../../../assets/Chocolates/happy-birthday-kitkat-chocolates_1.jpg';
 import ItemCard from '../../../components/ItemCard';
 const ChocolatesList = [
     {
@@ -115,7 +115,7 @@ export default function ChocolatesView(){
     return(
         <>
         <Box sx={{margin:'25px'}}>
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"pink"}} >
          {
             ChocolatesList.map((item)=>{
                 return(

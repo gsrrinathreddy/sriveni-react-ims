@@ -3,16 +3,16 @@ import Grid from '@mui/material/Grid';
 import{useDispatch,useSelector} from 'react-redux';
 import {Box} from '@mui/material';
 //import cartComponent from '../../../components/cartComponent';
-import box1 from '../../../assets/Gifts/box_1.webp';
-import chocolategiftbox from '../../../assets/Gifts/chocolate-gift-box_1.webp';
-import collectionteagiftbox1 from '../../../assets/Gifts/collection-tea-gift-box_1.webp';
-import cranberrygifthamper1 from '../../../assets/Gifts/cranberry-gift-hamper_1.webp';
-import cushiongift1 from '../../../assets/Gifts/cushion-gift_1.webp';
-import heaven1 from '../../../assets/Gifts/heaven_1.webp';
-import lovegift1 from '../../../assets/Gifts/love-gift_1.webp'
-import moneyplantgiftcombo1 from '../../../assets/Gifts/money-plant-gift-combo_1.webp';
-import morningdewgiftbasket1 from '../../../assets/Gifts/morning-dew-gift-basket_1.webp'
-import napkingiftcombo1 from '../../../assets/Gifts/napkin-gift-combo_1.webp'
+import box1 from '../../../assets/Gifts/box_1.jpg';
+import chocolategiftbox from '../../../assets/Gifts/chocolate-gift-box_1.jpg';
+import collectionteagiftbox1 from '../../../assets/Gifts/collection-tea-gift-box_1.jpg';
+import cranberrygifthamper1 from '../../../assets/Gifts/cranberry-gift-hamper_1.jpg';
+import cushiongift1 from '../../../assets/Gifts/cushion-gift_1.jpg';
+import heaven1 from '../../../assets/Gifts/heaven_1.jpg';
+import lovegift1 from '../../../assets/Gifts/love-gift_1.jpg'
+import moneyplantgiftcombo1 from '../../../assets/Gifts/money-plant-gift-combo_1.jpg';
+import morningdewgiftbasket1 from '../../../assets/Gifts/morning-dew-gift-basket_1.jpg'
+import napkingiftcombo1 from '../../../assets/Gifts/napkin-gift-combo_1.jpg'
 
 import ItemCard from '../../../components/ItemCard';
 const GiftsList = [
@@ -109,7 +109,7 @@ export default function GiftView(){
         <>
         <Box sx={{margin:'25px'}}>
      
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"pink"}}>
          {
             
                 GiftsList.map((item)=>{
