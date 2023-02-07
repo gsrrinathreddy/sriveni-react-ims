@@ -12,10 +12,15 @@ import omrakhiandmoneyplant1 from '../../../assets/plants/om-rakhi-and-money-pla
 // import CardComponent from "../../../components/Cardcomponent";
 import { useDispatch, useSelector } from 'react-redux'
 import ItemCard from '../../../components/ItemCard';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 const PlantList = [
     {
 
-        title: "classicsyngoniumplant1",
+        title: "classic syngonium plant1",
         pic: classicsyngoniumplant1,
         actualprice: 100,
         discountprice: 70,
@@ -25,7 +30,7 @@ const PlantList = [
     },
     {
 
-        title: "corpplantforjagsonpal1",
+        title: "corp plant for jagsonpal1",
         pic: corpplantforjagsonpal1,
         actualprice: 100,
         discountprice: 70,
@@ -35,7 +40,7 @@ const PlantList = [
     },
     {
 
-        title: "jademoneyplantset1",
+        title: "jade money plant set1",
         pic: jademoneyplantset1,
         actualprice: 100,
         discountprice: 70,
@@ -45,7 +50,7 @@ const PlantList = [
     },
     {
 
-        title: "jadesyngoniumplantset1",
+        title: "jade syngonium plant set1",
         pic: jadesyngoniumplantset1,
         actualprice: 100,
         discountprice: 70,
@@ -56,7 +61,7 @@ const PlantList = [
     {
         
 
-            title: "moneyplantchocolatescombo1",
+            title: "money plant chocolates combo1",
             pic:moneyplantchocolatescombo1,
             actualprice: 100,
             discountprice: 70,
@@ -118,6 +123,12 @@ export default function Plantview(){
                 </Grid>
 
             </Box>
+            <Box>
+
+          <h2>keep in touch:<FacebookIcon/><WhatsAppIcon/><TwitterIcon/></h2> 
+          <h3 align = 'right'> contact mail:</h3>
+        </Box>
+
         </>
     )
 }

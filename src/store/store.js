@@ -7,6 +7,8 @@ import Flowerreducer from '../features/Flowers/FlowersSlice'
 import giftreducer from '../features/Gifts/GiftSlice'
 import plantReducer from '../features/Plant/PlantSlice'
 import cartReducer from "../features/cart/cartSlice"
+//import {persistStore,persistReducer} from 'react-persist';
+//import { Storage } from "@mui/icons-material";
 const store = configureStore({
     reducer:{
         cake:cakereducer,

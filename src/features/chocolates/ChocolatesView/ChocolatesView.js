@@ -13,6 +13,13 @@ import delectablechocolatesinfloralbox21pcs from '../../../assets/Chocolates/del
 import ferrerorocherdelightfulbouquet from '../../../assets/Chocolates/ferrero-rocher-delightful-bouquet_1.jpg';
 import happybirthdaykitkatchocolates from '../../../assets/Chocolates/happy-birthday-kitkat-chocolates_1.jpg';
 import ItemCard from '../../../components/ItemCard';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+
+
 const ChocolatesList = [
     {
     title:"assorted chocolate bouquet of sweetness",
@@ -134,6 +141,11 @@ export default function ChocolatesView(){
         }
         </Grid>
     
+        </Box>
+        <Box>
+
+          <h2>keep in touch:<FacebookIcon/><WhatsAppIcon/><TwitterIcon/></h2> 
+          <h3 align = 'right'> contact mail:</h3>
         </Box>
         
     

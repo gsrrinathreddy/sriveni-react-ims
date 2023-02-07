@@ -15,9 +15,13 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CartComp from '../cartComponent';
-import IMSAutocomplete from '../IMSAutocomplete';
+import Signin from '../../pages/Signin';
+//import IMSAutocomplete from '../IMSAutocomplete';
 import Cart from '../../pages/Cart';
 import { useSelect } from '@mui/base';
+import { Grid, TextField } from '@mui/material';
+//import Signin from '../../features/Signin';
+import IMSButton from '../IMSButton';
 //import Person2Icon from '@mui/icons-material/Person2';
 
 //const pages = ['cake', 'Chocolates', 'Flowers','Gifts','Plants'];
@@ -121,7 +125,7 @@ marginRight:'10px',marginLeft:'10px'
               ))}
             </Menu>
           </Box>
-          
+                    
               <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
               
           <Typography
@@ -160,9 +164,19 @@ marginRight:'10px',marginLeft:'10px'
         
             
               </Box>
-              <Box sx={{bgcolor:'white'}}>
-            <IMSAutocomplete/>
-            </Box>
+              <Link to={'/Signin'}>
+              
+
+              
+              <IMSButton/>
+              </Link>
+              
+
+                          
+            
+          
+          
+
             
 
 

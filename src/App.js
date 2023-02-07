@@ -13,17 +13,21 @@ import Gifts from './pages/Gifts';
 import Plants from './pages/Plants';
 import Error from './pages/Error';
 import Delivery from './pages/Delivery';
-import Signin from './features/Signin';
-import Signout1 from './features/Signout1';
+import Signin from './pages/Signin';
 import Checkout1 from './pages/Checkout1';
-
-
+import IMSButton from './components/IMSButton';
+import Signout from './pages/Signout';
+import Favorite from './pages/Favourite';
 
 
 function App() {
+  
    let a=['cake', 'Chocolates', 'Flowers','Gifts','Plants'];
 
-   let b=['Signin', 'Checkout1', 'Dashboard', 'Signout1'];
+   let b=[ 'Checkout1', 'Dashboard', ];
+   
+    
+   
   return (
     <div className="App">
       <BrowserRouter>
@@ -40,10 +44,10 @@ function App() {
        <Route path='/Plants' element={<Plants/>}/>
        <Route path='cart/Delivery'element={<Delivery/>}/>
        <Route path='/Signin' element={<Signin/>}/>
-       <Route path='/Signout1' element={<Signout1/>}/>
        <Route path='/Checkout1' element={<Checkout1/>}/>
-      
-       
+       <Route path='/IMSButton' element={<IMSButton/>}/>
+        <Route path='/Signout' element={<Signout/>}/>  
+        <Route path='/Favourite' element={<Favorite/>}/>     
 
     
       </Routes>

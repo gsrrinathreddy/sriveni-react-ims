@@ -2,20 +2,20 @@ import { Grid } from '@mui/material';
 import { Box } from '@mui/system';
 
 //import {Button} from '@mui/material';
-import cake1 from '../../../assets/cakes/cake1.jpg';
-import cake2 from '../../../assets/cakes/cake2.jpg';
-import cake3 from '../../../assets/cakes/cake3.jpg';
-import cake4 from '../../../assets/cakes/cake4.jpg';
-import cake5 from '../../../assets/cakes/cake5.jpg';
-import cake6 from '../../../assets/cakes/cake6.jpg';
-import cake7 from '../../../assets/cakes/cake7.jpg';
-import cake8 from '../../../assets/cakes/cake8.webp';
-import cake9 from '../../../assets/cakes/cake9.jpg';
-import cake10 from '../../../assets/cakes/cake10.jpg';
-import cake11 from '../../../assets/cakes/cake11.jpg';
-import cake12 from '../../../assets/cakes/cake12.jpg';
-import cake13 from '../../../assets/cakes/cake13.jpg';
-import cake14 from '../../../assets/cakes/cake14.jpg';
+import Pinkchococake from '../../../assets/cakes/cake1.jpg';
+import Richinchocolate from '../../../assets/cakes/cake2.jpg';
+import Weddingcake from '../../../assets/cakes/cake3.jpg';
+import Trufflecake from '../../../assets/cakes/cake4.jpg';
+import Creamydripblackforest from '../../../assets/cakes/cake5.jpg';
+import Happybirthdaycake from '../../../assets/cakes/cake6.jpg';
+import Kitkatchococake from '../../../assets/cakes/cake7.jpg';
+import pinkvaletcake from '../../../assets/cakes/cake8.webp';
+import Crunchychococake from '../../../assets/cakes/cake9.jpg';
+import Vinelachococake from '../../../assets/cakes/cake10.jpg';
+import Pandabirthdaycake from '../../../assets/cakes/cake11.jpg';
+import Loveyouvalentinechococake from '../../../assets/cakes/cake12.jpg';
+import Expressionoflovecake from '../../../assets/cakes/cake13.jpg';
+import Prettydogcake from '../../../assets/cakes/cake14.jpg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -30,16 +30,16 @@ import {ordered,restocked}from'../cakeslice'
     const cakeList = [
 
         {
-            title:"cake1",
-            pic:cake1,
+            title:"Pink choco cake",
+            pic:Pinkchococake,
             actualprice:100,
             discountprice:70,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake2",
-            pic:cake2,
+            title:"Rich in chocolate",
+            pic:Richinchocolate,
             actualprice:250,
             discountprice:200,
             rating:4,
@@ -47,8 +47,8 @@ import {ordered,restocked}from'../cakeslice'
     
         },
         {
-            title:"cake3",
-            pic:cake3,
+            title:"Wedding cake",
+            pic:Weddingcake,
             actualprice:150,
             discountprice:100,
             rating:4,
@@ -56,8 +56,8 @@ import {ordered,restocked}from'../cakeslice'
     
         },
         {
-            title:"cake4",
-            pic:cake4,
+            title:"Truffle cake",
+            pic:Trufflecake,
             actualprice:100,
             discountprice:70,
             rating:4,
@@ -65,8 +65,8 @@ import {ordered,restocked}from'../cakeslice'
         
         },
         {
-            title:"cake5",
-            pic:cake5,
+            title:"Creamy drip blackforest",
+            pic:Creamydripblackforest,
             actualprice:200,
             discountprice:170,
             rating:4,
@@ -76,8 +76,8 @@ import {ordered,restocked}from'../cakeslice'
 
         },
         {
-            title:"cake6",
-            pic:cake6,
+            title:"Happy birthday cake",
+            pic:Happybirthdaycake,
             actualprice:250,
             discountprice:240,
             rating:4,
@@ -85,8 +85,8 @@ import {ordered,restocked}from'../cakeslice'
  
         },
         {
-            title:"cake7",
-            pic:cake7,
+            title:"Kit kat choco cake",
+            pic:Kitkatchococake,
             actualprice:500,
             discountprice:450,
             rating:4,
@@ -94,8 +94,8 @@ import {ordered,restocked}from'../cakeslice'
  
         },
         {
-            title:"cake8",
-            pic:cake8,
+            title:"pink valet cake",
+            pic:pinkvaletcake,
             actualprice:600,
             discountprice:570,
             rating:4,
@@ -103,48 +103,48 @@ import {ordered,restocked}from'../cakeslice'
  
         },
         {
-            title:"cake9",
-            pic:cake9,
+            title:"Crunchy choco cake",
+            pic:Crunchychococake,
             actualprice:550,
             discountprice:490,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake10",
-            pic:cake10,
+            title:"Vinela choco cake",
+            pic:Vinelachococake,
             actualprice:500,
             discountprice:490,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake11",
-            pic:cake11,
+            title:"Panda birthday cake",
+            pic:Pandabirthdaycake,
             actualprice:700,
             discountprice:670,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake12",
-            pic:cake12,
+            title:"Love you valentine chococake",
+            pic:Loveyouvalentinechococake,
             actualprice:800,
             discountprice:770,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake13",
-            pic:cake13,
+            title:"Expression of love cake",
+            pic:Expressionoflovecake,
             actualprice:700,
             discountprice:680,
             rating:4,
             sellingstatus:"best seller"
         },
         {
-            title:"cake14",
-            pic:cake14,
+            title:"Pretty dog cake",
+            pic:Prettydogcake,
             actualprice:800,
             discountprice:740,
             rating:4,
@@ -154,9 +154,14 @@ import {ordered,restocked}from'../cakeslice'
     ]
     export default function Cakeview(){
     return(
+
+        
+
         <>
+
+    
         <Box sx={{margin:'25px'}} >
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:'pink'}}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:'#FFE0B2'}}>
          {
             cakeList.map((item)=>{
                 return(
@@ -177,19 +182,14 @@ import {ordered,restocked}from'../cakeslice'
         }
         </Grid>
     
+        </Box >
+        <Box>
+
+          <h2>keep in touch:<FacebookIcon/><WhatsAppIcon/><TwitterIcon/></h2> 
+          <h3 align = 'right'> contact mail:</h3>
         </Box>
-        <Box style={{backgroundColor:'carnation Pink'}}>
-            <h2 align = 'left'> Contact Us</h2>
-            <h4 align ='left'>   about us </h4>
-            <h4 align = 'left'>about logo team</h4>
-            <h4 align = 'left'> careers </h4>
-            <h2 align = 'right'>contact mail</h2>
-            <h2> Keep In Touch   :            <FacebookIcon/>  <WhatsAppIcon/>     <InstagramIcon/>     <TwitterIcon/></h2>
-            </Box>
-        
-    
-         </>
-      
+        </>
     )
-    
+
+                  
 }

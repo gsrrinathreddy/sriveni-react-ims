@@ -15,6 +15,11 @@ import morningdewgiftbasket1 from '../../../assets/Gifts/morning-dew-gift-basket
 import napkingiftcombo1 from '../../../assets/Gifts/napkin-gift-combo_1.jpg'
 
 import ItemCard from '../../../components/ItemCard';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 const GiftsList = [
     {
     title:"box 1",
@@ -109,7 +114,7 @@ export default function GiftView(){
         <>
         <Box sx={{margin:'25px'}}>
      
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"pink"}}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"#BBDEFB"}}>
          {
             
                 GiftsList.map((item)=>{
@@ -129,6 +134,13 @@ export default function GiftView(){
         }
         </Grid>
         </Box>
+        <Box>
+
+          <h2>keep in touch:<FacebookIcon/><WhatsAppIcon/><TwitterIcon/></h2> 
+          <h3 align = 'right'> contact mail:abc@gmail.com</h3>
+        </Box>
+        
+
         </> 
                )
    }

@@ -25,7 +25,11 @@ import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutl
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
-import { ordered as chocolateordered } from '../../features/chocolates/ChocolatesSlice'
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import { ordered as chocolateordered } from '../../features/chocolates/ChocolatesSlice';
+import Dialogbox from '../../features/Dialogbox';
+import { Link } from 'react-router-dom';
+import Favorite from '../../pages/Favourite';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -42,9 +46,7 @@ export default function ItemCard(props){
   let avatar = props.avatar;
   let title = props.title;
   const dispatch=useDispatch();
-  //let subheader = props.subheader;
   let pic = props.pic;
-  // let Cardcomponent = props.Cardcomponent;
   let ordername=props.ordername;
   let discountprice = props.discountprice;
   let actualprice = props.actualprice;
@@ -68,14 +70,6 @@ export default function ItemCard(props){
     qty:parseInt(qty),
     total:discountprice
   }
-  
-  
-
-    
-    
-    
-  
-
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -114,7 +108,7 @@ export default function ItemCard(props){
           
         }
         title={title}
-        subheader="choco cake"
+        
       />
       <CardMedia >
       <div style={{position:"relative"}}>
@@ -171,15 +165,18 @@ export default function ItemCard(props){
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites"
         onClick={handleClick}
-        style={{color:Active ?"red":"black"}}
+        navigate to = {'Favourite'}
+        style={{color:Active ?"red":"#F88379"}}
         >
-          <FavoriteIcon />
-        </IconButton>
+       
+          
+          <ThumbUpIcon />
+          </IconButton>
 
               
         
         <IconButton aria-label="share">
-          <ShareIcon />
+          <Dialogbox />
         </IconButton>
         <Typography paragraph>
             <IMSRating/>

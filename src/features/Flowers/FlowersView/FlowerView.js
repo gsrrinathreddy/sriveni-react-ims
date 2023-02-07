@@ -15,6 +15,11 @@ import enchantingorchidsbouquet from '../../../assets/Flowers/enchanting-orchids
 import gleamingbeautyfloralarrangement from '../../../assets/Flowers/gleaming-beauty-floral-arrangement_1.jpg';
 import hellosunshine3sunflowersbouquet from '../../../assets/Flowers/hello-sunshine-3-sunflowers-bouquet_1.jpg';
 import ItemCard from '../../../components/ItemCard';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 //import IMSNavbar from '../../../components/IMSNavbar';
 const FlowersList = [
     {
@@ -139,7 +144,7 @@ export default function Flowerview(){
     return(
         <>
         <Box sx={{margin:'25px'}}></Box>
-        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"pink"}}>
+        <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{backgroundColor:"#FFE0B2"}}>
          {
             
                 FlowersList.map((item)=>{
@@ -157,6 +162,13 @@ export default function Flowerview(){
                    })
                 }
         </Grid> 
+        <Box>
+
+          <h2>keep in touch:<FacebookIcon/><WhatsAppIcon/><TwitterIcon/></h2> 
+          <h3 align = 'right'> contact mail:</h3>
+        </Box>
+        
+
         </>
     )
             }
